@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 
 class App extends React.Component {
-  //js class constructor its call during class initializing
+  //Babel will automatically create the constructor and super no need to write here and dont use this while not using constructor
   state = {
     latitude: null,
     errorMessage: ""
