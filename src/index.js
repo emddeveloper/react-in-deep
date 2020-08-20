@@ -3,14 +3,9 @@ import ReactDOM from "react-dom"
 
 class App extends React.Component {
   //js class constructor its call during class initializing
-  constructor(props) {
-    //super is the reference of parent class here React.Component
-    super(props)
-    //Initialize the state
-    this.state = {
-      latitude: null,
-      errorMessage: ""
-    }
+  state = {
+    latitude: null,
+    errorMessage: ""
   }
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
