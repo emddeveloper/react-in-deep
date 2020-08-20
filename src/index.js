@@ -21,6 +21,15 @@ class App extends React.Component {
       err => this.setState({ errorMessage: err.message })
     )
   }
+  componentDidMount() {
+    console.log("didmount")
+  }
+  componentDidUpdate() {
+    console.log("did update")
+  }
+  componentWillUnmount() {
+    console.log("will unmount")
+  }
   //React says we have to define render() !!
   render() {
     if (this.state.errorMessage && !this.state.latitude) {
